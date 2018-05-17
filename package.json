@@ -5,6 +5,8 @@
   "author": "zhoufs1 <zhoufs1@yonyou.com>",
   "private": true,
   "scripts": {
+    "reg-cn": "npm config set registry https://registry.npm.taobao.org",
+    "reg-clear": "npm config delete registry",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
